@@ -10,57 +10,86 @@
 <body>
   <header>
     <nav>
-      <button>
-        Log in
-      </button>
+      <div class="nav-end">
+        <button class="sign-in-button">
+          Sign-In
+        </button>
+        <p>
+          Already have an Intuit account?
+          <br>
+          <a href="#">I forgot my UserID or Password</a>
+        </p>
+      </div>
     </nav>
   </header>
   
   <section>
     <div class="form-heading">
-      <h1 class="title">Inuit</h1>
+      <h1 class="title">Intuit</h1>
       <span>Icons go here</span>
     </div>
     <section class="registration-contianer">
-      <form action="/" method="post", class="registration-form">
-  
-        <div class="email-container">
-          <label for="email" class="input-label">Email</label>
-          <div class="control">
-            <input type="email" name="email" id="email" autocomplete="email", class="registration-input">
-          </div>
-        </div>
-  
-        <div class="phone-container">
-          <label for="phone" class="input-label">Phone (recommended)</label>
-          <div class="control">
-            <input type="tel" name="phone" id="phone" autocomplete="tel", class="registration-input">
-          </div>
-        </div>
-  
-        <div class="password-container">
-          <label for="password" class="input-label">Password</label>
-          <div class="control">
-            <input type="password" name="password" id="password" autocomplete="new-password", class="registration-input">
+      <div class="registration-form">
+        <h3>Create an Intuit account</h3>
+        <p class="subtitle dim-text">
+          One account for everything Intuit, including Mint.
+          <a href="#" class="learn-more">Learn more</a>
+        </p>
+        <form action="/" method="post">
+    
+          <div class="field email-container">
+            <label for="email" class="input-label">Email</label>
+            <div class="control">
+              <input type="email" name="email" id="email" autocomplete="email", class="registration-input">
+            </div>
           </div>
     
-          <label for="confirmation" class="input-label">Password Confirmation</label>
-          <div class="control">
-            <input type="password" name="password_confirmation" id="confirmation", class="registration-input">
+          <div class="field phone-container">
+            <label for="phone" class="input-label">Phone <span class="dim-text">(recommended)</span></label>
+            <div class="control">
+              <input type="tel" name="phone" id="phone" autocomplete="tel", class="registration-input">
+            </div>
+            <p class="phone-info">Standard call, message, or data rates may apply.</p>
           </div>
-        </div>
+    
+          <div class="field password-container">
+            <label for="password" class="input-label">Password</label>
+            <div class="control">
+              <input type="password" name="password" id="password" autocomplete="new-password", class="registration-input">
+            </div>
+          </div>
 
-        <button>
-          Create Account
-        </button>
-      </form>
+          <div class="field password-confirmation-container">
+            <label for="confirmation" class="input-label">Password Confirmation</label>
+            <div class="control">
+              <input type="password" name="password_confirmation" id="confirmation", class="registration-input">
+            </div>
+          </div>
+  
+          <button class="create-button">
+            Create Account
+          </button>
+
+          <p class="dim-text form-terms">
+            By selecting Create Account, you agree to our <a href="#">Terms</a> and have read and 
+            acknowledge our 
+            <a href="">Global Privacy Statement.</a>
+          </p>
+        </form>
+      </div>
+      <section class="registration-form form-footer">
+        <p> Invisible reCAPTCHA by <a href="#">Google Privacy Policy</a> and <a href="#">Terms of Use.</a></p>
+      </section>
     </section>
   </section>
 
   <footer>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Odio saepe, labore debitis repellendus neque nihil temporibus? 
-    Neque quam voluptas iure officiis aperiam aspernatur incidunt sed tempore quis! Quo, totam praesentium!
+    This project was a (re-)introduction to forms. Having used forms in Rails, 
+    the majority of this process, especially for a simple form like this, was 
+    familiar. Nevertheless there were things to learn for both the HTML & CSS 
+    side of creating forms. <br>
+    This form is meant to look like <a href="https://accounts.intuit.com/signup.html">this Intuit form</a>, 
+    minus the icons.
   </footer>
   
 </body>
