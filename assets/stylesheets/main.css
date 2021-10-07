@@ -48,3 +48,50 @@ table {
 }
 
 /* Main Styles */
+
+body {
+	background: #ECEEF1;
+}
+
+/* Navbar */
+
+/* Form Heading */
+.form-heading {
+	margin: 0, auto;
+	border: 1px solid tomato;
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+}
+
+/* Form */
+.registration-container {
+	width: auto;
+	height: 250px;
+	margin: auto;
+}
+
+.registration-form {
+	border: 1px solid #c7c7c7;
+	background: #fff;
+	box-sizing: border-box;
+	margin: auto;
+	width: 300px;
+	padding: 30px;
+}
+
+.control {
+	padding: 5px 0;
+	margin: 10px;
+}
+
+.input-label {
+	margin: 10px;
+	padding: 2px;
+}
+
+.registration-input {
+	border: 1px solid #C1C5C8;
+	padding: 6px 8px 6px 0;
+	border-radius: 2px;
+}
