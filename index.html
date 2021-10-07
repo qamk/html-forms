@@ -4,20 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/stylesheets/main.css">
   <title>HTML Forms</title>
 </head>
 <body>
-
   <header>
     <nav>
-      
+      <button>
+        Log in
+      </button>
     </nav>
   </header>
-
+  
   <section>
-    <form action="" method="post">
+    <div class="form-heading">
+      <h1 class="title">Inuit</h1>
+      <span>Icons go here</span>
+    </div>
+    <section class="registration-contianer">
+      <form action="/" method="post", class="registration-form">
+  
+        <div class="email-container">
+          <label for="email" class="input-label">Email</label>
+          <div class="control">
+            <input type="email" name="email" id="email" autocomplete="email", class="registration-input">
+          </div>
+        </div>
+  
+        <div class="phone-container">
+          <label for="phone" class="input-label">Phone (recommended)</label>
+          <div class="control">
+            <input type="tel" name="phone" id="phone" autocomplete="tel", class="registration-input">
+          </div>
+        </div>
+  
+        <div class="password-container">
+          <label for="password" class="input-label">Password</label>
+          <div class="control">
+            <input type="password" name="password" id="password" autocomplete="new-password", class="registration-input">
+          </div>
+    
+          <label for="confirmation" class="input-label">Password Confirmation</label>
+          <div class="control">
+            <input type="password" name="password_confirmation" id="confirmation", class="registration-input">
+          </div>
+        </div>
 
-    </form>
+        <button>
+          Create Account
+        </button>
+      </form>
+    </section>
   </section>
 
   <footer>
